@@ -255,6 +255,7 @@ class Resource_Model(Model):
             contribution_list.append(contribution)
         return contribution_list
 
+#modified version of mesa's BaseScheduler class.
 class BaseScheduler(object):
     model = None
     steps = 0
@@ -299,6 +300,7 @@ class BaseScheduler(object):
     def get_agent_count(self):
         return len(self.agents)
 
+#modified version of mesa's BatchRunner class
 class BatchRunner(object):
 
 
